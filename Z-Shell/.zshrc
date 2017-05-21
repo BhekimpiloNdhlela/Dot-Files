@@ -4,6 +4,7 @@
 
 #launch tmux at the start of a session
 if [ "$TMUX" = "" ]; then tmux; fi
+PS1="=~>"
 
 #shortcuts baby
 alias v="vim"
@@ -19,7 +20,7 @@ alias j="java"
 alias quit="exit"
 alias htp="htop"
 
-# changing th sudo commands
+# changing the sudo commands
 alias install="sudo apt install"
 alias update="sudo update"
 alias upgrade="sudo upgrade"
@@ -29,6 +30,11 @@ alias go="cd "
 alias gob="cd .."
 alias god="cd ~/Desktop/"
 alias goh="cd ~/"
+alias localrepo="cd ~/MyWork/"
 
-alias clr="clear"
-alias path="pwd"
+#some handy shortcut handy commands
+alias c="clear"
+alias p="pwd"
+alias l="ls"
+alias ll="ls -a"
+alias lll="ls -al"
