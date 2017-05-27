@@ -1,6 +1,5 @@
 set number
 filetype plugin on
-filetype indent on
 set wildmenu
 
 "Always show current position
@@ -17,8 +16,6 @@ set tabstop=2
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
 set wrap "Wrap lines
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
