@@ -46,3 +46,30 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"To display the status line always,
+set laststatus=2
+set statusline=%t       "tail of the filename
+set statusline+=%m      "modified flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+:set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]
+
+function! InsertStatuslineColor(mode)
+  if a:mode == 'i'
+    hi statusline guibg=Blue ctermfg=6 guifg=Black ctermbg=0
+  elseif a:mode == 'r'
+    hi statusline guibg=Purple ctermfg=5 guifg=Black ctermbg=0
+  else
+    hi statusline guibg=Red ctermfg=1 guifg=Black ctermbg=0
+  endif
+endfunction
+
+au InsertEnter * call InsertStatuslineColor(v:insertmode)
+au InsertLeave * hi statusline guibg=Red ctermfg=8 guifg=White ctermbg=15
+
+" default the statusline to green when entering Vim
+hi statusline guibg=Red ctermfg=8 guifg=White ctermbg=15
