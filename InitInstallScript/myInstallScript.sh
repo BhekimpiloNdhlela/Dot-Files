@@ -45,5 +45,13 @@ apt-get install unity-tweak-tool
 #get rid of the guest account
 sh -c "echo 'allow-guest=false' >> /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf"
 
+
+sudo add-apt-repository ppa:webupd8team/atom
+
+sudo apt-get update
+
+sudo apt-get install atom
+
+
 #restart machine after the installation of these components.
 reboot

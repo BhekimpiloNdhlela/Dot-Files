@@ -16,6 +16,10 @@ alias py="python"
 alias j="java"
 alias q="exit"
 alias htp="htop"
+
+alias gr="go run"
+alias gb="go build"
+
 #git shortcuts
 alias commit="git commit"
 alias init="git init"
@@ -25,13 +29,12 @@ alias status="git status"
 alias push="git push -u origin master"
 # changing the sudo commands
 alias install="sudo apt install"
-alias update="sudo update"
+alias update="sudo apt update"
 alias upgrade="sudo upgrade"
 #changing directory shortcuts
-alias go="cd "
-alias gob="cd .."
-alias god="cd ~/Desktop/"
-alias goh="cd ~/"
+alias ..="cd .."
+alias cdd="cd ~/Desktop/"
+alias cdh="cd ~/"
 alias lr="cd ~/LocalRepo/"
 #some handy shortcut handy commands
 alias c="clear"
@@ -45,3 +48,6 @@ alias shutdown="poweroff"
 alias restart="reboot"
 #lock SCREEN
 alias lock="gnome-screensaver-command --lock"
+
+#make output scrolable
+alias scrl="| less"
