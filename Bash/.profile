@@ -20,3 +20,8 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/LocalRepo/LanguageSyntaxPractice/GOLANG
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+

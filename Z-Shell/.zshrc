@@ -21,6 +21,8 @@ alias gr="go run"
 alias gb="go build"
 
 #git shortcuts
+alias config_un="git config --global user.name"
+alias config_ue="git config --gloabal user.email"
 alias commit="git commit"
 alias init="git init"
 alias add="git add *"

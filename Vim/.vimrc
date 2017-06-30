@@ -58,10 +58,6 @@ set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 :set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]
 
-
-
-
-
 function! InsertStatuslineColor(mode)
   if a:mode == 'i'
     hi statusline guibg=Blue ctermfg=6 guifg=Black ctermbg=0
