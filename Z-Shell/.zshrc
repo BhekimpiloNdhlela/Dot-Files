@@ -19,7 +19,7 @@ alias htp="htop"
 
 alias gr="go run"
 alias gb="go build"
-
+alias dbv="dbeaver &"
 #git shortcuts
 alias config_un="git config --global user.name"
 alias config_ue="git config --gloabal user.email"
@@ -29,10 +29,12 @@ alias add="git add *"
 alias bring="git clone"
 alias status="git status"
 alias push="git push -u origin master"
+alias addRemote="git remote add origin"
+
 # changing the sudo commands
 alias install="sudo apt install"
 alias update="sudo apt update"
-alias upgrade="sudo upgrade"
+alias upgrade="sudo apt upgrade"
 #changing directory shortcuts
 alias ..="cd .."
 alias cdd="cd ~/Desktop/"
@@ -51,5 +53,5 @@ alias restart="reboot"
 #lock SCREEN
 alias lock="gnome-screensaver-command --lock"
 
-#make output scrolable
-alias scrl="| less"
+#manage xampp
+alias manageXampp="sudo /opt/lampp/manager-linux-x64.run"

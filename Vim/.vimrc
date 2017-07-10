@@ -6,7 +6,8 @@ set wildmenu
 set ruler
 colorscheme desert
 set background=dark
-
+"search highlight
+set hlsearch
 " Be smart when using tabs ;)
 set smarttab
 
