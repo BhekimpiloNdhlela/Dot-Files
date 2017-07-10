@@ -1,3 +1,4 @@
+set relativenumber
 set number
 filetype plugin on
 set wildmenu
