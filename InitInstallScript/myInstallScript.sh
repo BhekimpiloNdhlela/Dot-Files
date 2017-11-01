@@ -11,16 +11,46 @@
 #       differ deppending on the ubuntu Operating System version. 
 
 echo Hello This is the initial installation script.
+
+#install pip
+sudo apt-get install python-pip python-dev build-essential 
+sudo pip install --upgrade pip 
+sudo pip install --upgrade virtualenv
+python -m pip install --upgrade pip
+sudo pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+#obviously 
+sudo pip install scikit-learn
+#tweeter api
+sudo pip install tweepy
+#text analy
+sudo pip install textblob
+#movie rec
+sudo pip install lightfm
+
+#Pyrebase is a Python interface to Firebase’s REST API. In layman’s terms, it allows you
+#to use Python to manipulate your Firebase database. The documentation for Pyrebase can
+#be found at https://github.com/thisbejim/Pyrebase sudo pip install Pyrebase
+sudo pip install Pyrebase
+
+#installl pyramid a python be framework
+#https://www.digitalocean.com/community/tutorials/how-to-use-the-pyramid-framework-to-build-your-python-web-app-on-ubuntu
+sudo apt-get update
+sudo apt-get install python3-dev python3-setuptools
+sudo easy_install virtualenv
+
+#install nasm for assembly [IA-32, 80386 INTEL]
+sudo apt-get update
+sudo apt-get install nasm
+
+# install oh my zsh
+sudo apt-get install zsh
+sudo apt-get install git-core
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+
 #upgrade the system and then update it.
 sudo apt-get upgrade
 sudo apt-get update
-
-#install xamppp
-chmod 755 xampp-linux-*-installer.run
-sudo ./xampp-linux-*-installer.run
-
-#install dbeaver.
-sudo dpkg -i dbeaver-ce_4.1.0_amd64.deb
 
 #install java jre and jdk.
 sudo apt-get update
