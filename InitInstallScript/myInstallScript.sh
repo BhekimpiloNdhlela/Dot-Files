@@ -12,6 +12,7 @@
 
 echo Hello This is the initial installation script.
 
+sudo apt-get update
 #install pip
 sudo apt-get install python-pip python-dev build-essential 
 sudo pip install --upgrade pip 
@@ -26,7 +27,8 @@ sudo pip install tweepy
 sudo pip install textblob
 #movie rec
 sudo pip install lightfm
-
+#install firebase
+sudo pip install firebase-admin
 #Pyrebase is a Python interface to Firebase’s REST API. In layman’s terms, it allows you
 #to use Python to manipulate your Firebase database. The documentation for Pyrebase can
 #be found at https://github.com/thisbejim/Pyrebase sudo pip install Pyrebase
@@ -34,12 +36,10 @@ sudo pip install Pyrebase
 
 #installl pyramid a python be framework
 #https://www.digitalocean.com/community/tutorials/how-to-use-the-pyramid-framework-to-build-your-python-web-app-on-ubuntu
-sudo apt-get update
 sudo apt-get install python3-dev python3-setuptools
 sudo easy_install virtualenv
 
 #install nasm for assembly [IA-32, 80386 INTEL]
-sudo apt-get update
 sudo apt-get install nasm
 
 # install oh my zsh
