@@ -16,13 +16,11 @@ alias py="python"
 alias j="java"
 alias q="exit"
 alias htp="htop"
-
 alias ccc="cc -Wall -ansi -pedantic -o"
 
 alias bring_cs244_repo="git clone rw244-2017@git.cs.sun.ac.za:18998712"
 alias gr="go run"
 alias gb="go build"
-alias dbv="dbeaver &"
 #git shortcuts
 alias config_un="git config --global user.name"
 alias config_ue="git config --gloabal user.email"
@@ -61,7 +59,6 @@ alias tM="v .tmux.conf"
 alias bA="v .bashrc"
 alias bP="v .profile"
 
-
 #power shortcuts
 alias shutdown="poweroff"
 alias restart="reboot"
@@ -69,6 +66,3 @@ alias restart="reboot"
 #lock SCREEN
 alias lock="gnome-screensaver-command --lock"
 
-#manage xampp
-#does not work in the computer science lab! 
-alias manageXampp="sudo /opt/lampp/manager-linux-x64.run"
